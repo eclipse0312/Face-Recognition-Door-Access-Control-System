@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,4">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="sidebar_widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>256</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>256</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="avatar_widget" native="true">
+        <property name="tabletTracking">
+         <bool>true</bool>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:  white;
+</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="user_page_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{	border-radius: 40px;
+	background-color: rgb(255, 255, 255);
+}
+/*按钮停留态*/
+QPushButton:hover
+{	border-radius: 40px;
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{ 	border-radius: 40px;
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}
+
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/账号管理.png</normaloff>../DoorAccessSystem/icon/账号管理.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="tabletTracking">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;黑体&quot;;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="midLineWidth">
+            <number>0</number>
+           </property>
+           <property name="text">
+            <string>何希童</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="sidebar_button_widget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:  white;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>28</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="home_page_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QPushButton
+{	border-radius: 10px;
+	font: 12pt &quot;黑体&quot;; 
+    color:black;
+	background-color: rgb(255, 255, 255);
+}
+/*按钮停留态*/
+QPushButton:hover
+{	border-radius: 10px;
+    color:rgb(27 , 39 , 246);
+	background-color:rgb(238 , 243 , 255);
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{ 	border-radius: 10px;
+    background-color:rgb(238 , 243 , 255);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+           </property>
+           <property name="text">
+            <string>   主页</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/user.png</normaloff>../DoorAccessSystem/icon/user.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="management_button">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{	border-radius: 10px;
+	font: 12pt &quot;黑体&quot;; 
+    color:black;
+	background-color: rgb(255, 255, 255);
+}
+/*按钮停留态*/
+QPushButton:hover
+{	border-radius: 10px;
+    color:rgb(27 , 39 , 246);
+	background-color:rgb(238 , 243 , 255);
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{ 	border-radius: 10px;
+    background-color:rgb(238 , 243 , 255);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+           </property>
+           <property name="text">
+            <string>   管理</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/线性_菜单.png</normaloff>../DoorAccessSystem/icon/线性_菜单.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="users_page_button">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{	border-radius: 10px;
+	font: 12pt &quot;黑体&quot;; 
+    color:black;
+	background-color: rgb(255, 255, 255);
+}
+/*按钮停留态*/
+QPushButton:hover
+{	border-radius: 10px;
+    color:rgb(27 , 39 , 246);
+	background-color:rgb(238 , 243 , 255);
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{ 	border-radius: 10px;
+    background-color:rgb(238 , 243 , 255);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+           </property>
+           <property name="text">
+            <string>   用户</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/users.png</normaloff>../DoorAccessSystem/icon/users.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{	border-radius: 10px;
+	font: 12pt &quot;黑体&quot;; 
+    color:black;
+	background-color: rgb(255, 255, 255);
+}
+/*按钮停留态*/
+QPushButton:hover
+{	border-radius: 10px;
+    color:rgb(27 , 39 , 246);
+	background-color:rgb(238 , 243 , 255);
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{ 	border-radius: 10px;
+    background-color:rgb(238 , 243 , 255);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+           </property>
+           <property name="text">
+            <string>   报表</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/sheet.png</normaloff>../DoorAccessSystem/icon/sheet.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{	border-radius: 10px;
+	font: 12pt &quot;黑体&quot;; 
+    color:black;
+	background-color: rgb(255, 255, 255);
+}
+/*按钮停留态*/
+QPushButton:hover
+{	border-radius: 10px;
+    color:rgb(27 , 39 , 246);
+	background-color:rgb(238 , 243 , 255);
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{ 	border-radius: 10px;
+    background-color:rgb(238 , 243 , 255);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+           </property>
+           <property name="text">
+            <string>   设置</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/setting.png</normaloff>../DoorAccessSystem/icon/setting.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>200</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="content_area_widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,2,5">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_4" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>50</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="toolbar_frame_2">
+           <property name="styleSheet">
+            <string notr="true">border-radius: 10px;
+background-color:  white;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,2,10,10">
+            <property name="spacing">
+             <number>20</number>
+            </property>
+            <property name="leftMargin">
+             <number>20</number>
+            </property>
+            <property name="topMargin">
+             <number>20</number>
+            </property>
+            <property name="rightMargin">
+             <number>20</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="toolbar_label_6">
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;黑体&quot;;</string>
+              </property>
+              <property name="text">
+               <string>门禁系统  欢迎您</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDateEdit" name="dateEdit">
+              <property name="dateTime">
+               <datetime>
+                <hour>0</hour>
+                <minute>0</minute>
+                <second>0</second>
+                <year>2024</year>
+                <month>3</month>
+                <day>10</day>
+               </datetime>
+              </property>
+              <property name="minimumDateTime">
+               <datetime>
+                <hour>0</hour>
+                <minute>0</minute>
+                <second>0</second>
+                <year>1752</year>
+                <month>9</month>
+                <day>14</day>
+               </datetime>
+              </property>
+              <property name="currentSection">
+               <enum>QDateTimeEdit::MonthSection</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="toolButton_11">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 10px;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../DoorAccessSystem/icon/提醒.png</normaloff>../DoorAccessSystem/icon/提醒.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>50</width>
+                <height>50</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="user_page_button_2">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 10px;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../DoorAccessSystem/icon/账号管理.png</normaloff>../DoorAccessSystem/icon/账号管理.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>50</width>
+                <height>50</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_5" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0,0">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="today_count_button_6">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 10px;
+background-color:  white;
+font: 12pt &quot;黑体&quot;;
+padding: 5px 80px 80px 5px; /* 上、右、下、左的内边距</string>
+           </property>
+           <property name="text">
+            <string>今日人数</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/今日人数.png</normaloff>../DoorAccessSystem/icon/今日人数.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="autoRepeatDelay">
+            <number>300</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="breach_event_button">
+           <property name="styleSheet">
+            <string notr="true">border-radius: 10px;
+background-color:  white;
+font: 12pt &quot;黑体&quot;;
+padding: 5px 80px 80px 5px; /* 上、右、下、左的内边距</string>
+           </property>
+           <property name="text">
+            <string>违规事件</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/总人数.png</normaloff>../DoorAccessSystem/icon/总人数.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="autoDefault">
+            <bool>true</bool>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="attendance_button_6">
+           <property name="styleSheet">
+            <string notr="true">border-radius: 10px;
+background-color:  white;
+font: 12pt &quot;黑体&quot;;
+padding: 5px 80px 80px 5px; /* 上、右、下、左的内边距</string>
+           </property>
+           <property name="text">
+            <string>考勤</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/考勤.png</normaloff>../DoorAccessSystem/icon/考勤.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="visitors_button_6">
+           <property name="styleSheet">
+            <string notr="true">border-radius: 10px;
+background-color:  white;
+font: 12pt &quot;黑体&quot;;
+padding: 5px 80px 80px 5px; /* 上、右、下、左的内边距</string>
+           </property>
+           <property name="text">
+            <string>访客</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../DoorAccessSystem/icon/访客.png</normaloff>../DoorAccessSystem/icon/访客.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_6" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget_8" native="true">
+           <property name="styleSheet">
+            <string notr="true">border-radius: 10px;
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout" rowstretch="3,2" columnstretch="0,0">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="horizontalSpacing">
+             <number>20</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>10</number>
+            </property>
+            <item row="0" column="0" colspan="2">
+             <widget class="QWidget" name="bar_chart_widget" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 10px;
+background-color:  white;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QWidget" name="widget_26" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 10px;
+background-color:  white;</string>
+              </property>
+              <widget class="QLabel" name="label_3">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>10</y>
+                 <width>80</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 12pt &quot;黑体&quot;;</string>
+               </property>
+               <property name="text">
+                <string>快捷功能</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="face_import_button">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>50</y>
+                 <width>170</width>
+                 <height>90</height>
+                </rect>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{	font: 12pt &quot;黑体&quot;;
+	background-color: rgb(240, 240, 240);
+	border-radius: 10px;
+    color:black;
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{ 	border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+               </property>
+               <property name="text">
+                <string>人脸录入</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/人脸识别.png</normaloff>icon/人脸识别.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>50</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QWidget" name="widget_27" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 10px;
+background-color:  white;</string>
+              </property>
+              <widget class="QLabel" name="label_4">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>10</y>
+                 <width>80</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 12pt &quot;黑体&quot;;</string>
+               </property>
+               <property name="text">
+                <string>快捷功能</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="visitor_approval_button">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>50</y>
+                 <width>170</width>
+                 <height>90</height>
+                </rect>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton
+{	font: 12pt &quot;黑体&quot;;
+	background-color: rgb(240, 240, 240);
+	border-radius: 10px;
+    color:black;
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{ 	border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+               </property>
+               <property name="text">
+                <string>访客批准</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/访客准入.png</normaloff>icon/访客准入.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>50</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_7" native="true">
+           <property name="styleSheet">
+            <string notr="true">border-radius: 10px;
+background-color:  white;</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0" columnstretch="0,0" rowminimumheight="0,0" columnminimumwidth="0,0">
+            <property name="leftMargin">
+             <number>20</number>
+            </property>
+            <property name="topMargin">
+             <number>20</number>
+            </property>
+            <property name="rightMargin">
+             <number>20</number>
+            </property>
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <property name="horizontalSpacing">
+             <number>20</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>50</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 14pt &quot;幼圆&quot;;</string>
+              </property>
+              <property name="text">
+               <string>通过记录</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="show_records_button">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton
+{	border-radius: 10px;
+	font: 12pt &quot;黑体&quot;; 
+    color:black;
+	background-color: rgb(238 , 243 , 255);
+}
+/*按钮停留态*/
+QPushButton:hover
+{	border-radius: 10px;
+    color:rgb(27 , 39 , 246);
+	background-color:rgb(238 , 243 , 255);
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{ 	border-radius: 10px;
+    background-color:rgb(238 , 243 , 255);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+              </property>
+              <property name="text">
+               <string>全部显示</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QTableWidget" name="tableWidget">
+              <attribute name="horizontalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>145</number>
+              </attribute>
+              <attribute name="horizontalHeaderMinimumSectionSize">
+               <number>0</number>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="verticalHeaderDefaultSectionSize">
+               <number>70</number>
+              </attribute>
+              <attribute name="verticalHeaderMinimumSectionSize">
+               <number>0</number>
+              </attribute>
+              <row>
+               <property name="text">
+                <string>新建行</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>新建行</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>新建行</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>新建行</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>新建列</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>新建列</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>新建列</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

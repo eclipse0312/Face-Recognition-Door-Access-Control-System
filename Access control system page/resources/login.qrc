@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="新前缀">
+    <file>login_background.jpg</file>
+    <file>user_icon.png</file>
+    <file>password_icon.png</file>
+    <file>sky.png</file>
+    <file>shield.png</file>
+  </qresource>
+</RCC>

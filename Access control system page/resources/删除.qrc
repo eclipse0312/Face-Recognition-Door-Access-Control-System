@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="新前缀">
+    <file>照相机 (1).png</file>
+    <file>笔记本电脑_o.png</file>
+    <file>2-上一步.png</file>
+    <file>照相机.png</file>
+    <file>关闭.png</file>
+    <file>删除.png</file>
+    <file>删除.png</file>
+  </qresource>
+  <qresource prefix="userspage">
+    <file>搜索 (1).png</file>
+  </qresource>
+</RCC>

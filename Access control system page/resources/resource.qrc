@@ -1,0 +1,31 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>线性_菜单.png</file>
+    <file>setting.png</file>
+    <file>sheet.png</file>
+    <file>user.png</file>
+    <file>users.png</file>
+    <file>访客.png</file>
+    <file>访客准入.png</file>
+    <file>今日人数.png</file>
+    <file>考勤.png</file>
+    <file>人脸识别.png</file>
+    <file>提醒.png</file>
+    <file>账号管理.png</file>
+    <file>总人数.png</file>
+    <file>password_icon.png</file>
+    <file>user_icon.png</file>
+    <file>2-上一步.png</file>
+    <file>关闭.png</file>
+    <file>搜索 (1).png</file>
+    <file>笔记本电脑_o.png</file>
+    <file>照相机 (1).png</file>
+    <file>照相机.png</file>
+    <file>删除.png</file>
+    <file>shield.png</file>
+  </qresource>
+  <qresource prefix="image">
+    <file>sky.png</file>
+    <file>login_background.jpg</file>
+  </qresource>
+</RCC>
